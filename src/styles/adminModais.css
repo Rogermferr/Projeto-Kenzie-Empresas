@@ -1,0 +1,387 @@
+.department__modal--container{
+    position: fixed;
+
+    border: solid 2px #CCCCCC;
+    border-radius: 0.25rem;
+
+    width: 95%;
+    height: 80%;
+    padding: 0;
+}
+
+.department__modal--container > h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.department__section{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    height: 40%;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.department__desc{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    width: 50%;
+}
+
+.department__desc > h4{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.department__desc > span{
+    font-size: 1rem;
+}
+
+.select__users--div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    font-family: 'Inter', sans-serif;
+    width: 50%;
+}
+
+.select__users--div > select{
+    font-family: 'Inter', sans-serif;
+
+    border: solid 1px #CCCCCC;
+    border-radius: 0.25rem;
+    background-color: var(--white);
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#hire{
+    position: absolute;
+    top: 8rem;
+    right: 1rem;
+
+    border: solid 1px #4BA036;
+    border-radius: 0.25rem;
+    background-color: #4BA036;
+    padding: 0.5rem 1.5rem;
+
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+}
+
+.users__section{
+    height: 60%;
+
+    padding: 0 1rem;
+    
+}
+
+.list__users--container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #F8F8F8;
+    padding: 1rem;
+    
+    width: 100%;
+    overflow-x: auto;
+}
+
+.list__user--item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    background-color: var(--white);
+
+    height: 60%;
+}
+
+.list__user--item > h4{
+    font-size: 1rem;
+    font-weight: bold;
+
+    width: 9.5rem;
+}
+
+.list__user--item > span{
+    font-size: 1rem;
+}
+
+.list__user--item > button{
+    border: solid 2px #CE4646;
+    border-radius: 0.25rem;
+    background-color: var(--white);
+
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+
+    color: #CE4646;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+/* .list__item--btns > img{
+    cursor: pointer;
+} */
+
+.create__department--modal, 
+.edit__department--modal, 
+.edit__user--modal{
+    height: 60%;
+    width: 90%;
+    padding: 0;
+    border: solid 1px #CCCCCC;
+
+    position: fixed;
+}
+
+/* .modal__container::backdrop{
+    background: rgba(0, 0, 0, 0.5);
+} */
+
+.create__department--form, 
+.edit__department--form, 
+.edit__user--form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    height: 100%;
+    padding: 1rem;
+
+    position: relative;
+}
+
+.close__create--modal,
+.close__department--modal,
+.close__edit--department,
+.close__delete--department,
+.close__edit--user,
+.close__delete--user{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+
+    cursor: pointer;
+}
+
+.create__department--form > h2, 
+.edit__department--form > h2, 
+.edit__user--form > h2{
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+    line-height: 150%;
+}
+
+.create__department--form > input, 
+.create__department--form > select, 
+.edit__department--form > textarea, 
+.edit__user--form > select{
+    border: solid 1px #CCCCCC;
+    border-radius: 0.25rem;
+    background-color: var(--white);
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+
+    padding: 1rem;
+}
+
+#create_department, 
+#edit_department, 
+#edit_user{
+    background-color: var(--blue);
+    padding: 0.5rem 0;
+    width: 100%;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--white);
+
+    border: solid 1px var(--blue);
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+}
+
+.delete__department--modal, 
+.delete__user--modal{
+    position: fixed;
+
+    padding: 0;
+
+    border: solid 2px #CCCCCC;
+    border-radius: 0.25rem;
+
+    width: 90%;
+
+}
+
+.delete__department--div, 
+.delete__user--div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    text-align: center;
+
+    width: 100%;
+
+    padding: 1rem;
+}
+
+.delete__department--div > h2, 
+.delete__user--div > h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.delete__department--div > button, 
+.delete__user--div > button{
+    border: solid 1px #4BA036;
+    border-radius: 0.25rem;
+
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+
+    background-color: #4BA036;
+
+    padding: 0.5rem 3rem;
+    margin: 0 auto;
+    width: 50%;
+
+    cursor: pointer;
+}
+
+
+@media (min-width: 769px) {
+
+    .department__modal--container{
+        width: 50vw;
+        height: 80vh;
+
+        top: 10vh;
+    }
+
+    .department__modal--container > h2{
+        font-size: 2.25rem;
+        padding: 2rem;
+
+        line-height: 150%;
+    }
+
+    .department__modal--close{
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .department__section{
+        padding: 0 2rem;
+
+        height: 25%;
+    }
+
+    #hire{
+        position: absolute;
+        top: 10rem;
+        right: 2rem;
+        padding: 0.5rem 3rem;
+
+        cursor: pointer;
+    }
+
+    #select_users{
+        cursor: pointer;
+    }
+
+    .users__section{
+        padding: 0 2rem;
+        height: 40%;
+    }
+
+    .list__users--container{
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .list__user--item{
+        padding: 0.5rem 2rem;
+    }
+
+    .list__user--item > h4{
+        width: 12rem;
+    }
+
+    .list__user--item > button:hover{
+
+        background-color: var(--red);
+        color: var(--white);
+    }
+
+    .create__department--modal, 
+    .edit__department--modal, 
+    .edit__user--modal{
+        width: 40vw;
+    }
+
+    .create__department--form, 
+    .edit__department--form, 
+    .edit__user--form{
+        padding: 2rem;
+    }
+
+    .create__department--form > h2,
+    .edit__department--form > h2, 
+    .edit__user--form > h2{
+        font-size: 2.25rem;
+    }
+
+    .close__create--modal,
+    .close__department--modal,
+    .close__edit--department,
+    .close__delete--department,
+    .close__edit--user,
+    .close__delete--user{
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .delete__department--modal, 
+    .delete__user--modal{
+        width: 60vw;
+    }
+    
+    .delete__department--div, 
+    .delete__user--div{
+        padding: 3rem;
+
+    }
+
+    .delete__department--div > h2,
+    .delete__user--div > h2{
+        font-size: 1.75rem;
+    }
+}

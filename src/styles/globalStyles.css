@@ -1,0 +1,11 @@
+:root{
+    --blue: #4200FF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #CE4646;
+    --green: #4BA036;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/16370eced5.js" crossorigin="anonymous"></script>
+    
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+
+    <!-- scripts -->
+    <script src="./src/scripts/menuMobile.js" defer></script>
+    <script  type="module" src="./src/scripts/index.js" defer></script>
+    
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+
+    <header class="header__container">
+        
+        <div class="header__div--logo">
+            <h1><img src="./src/assets/img/Ellipse-Logo.svg" alt="">Kenzie Empresas</h1>
+            <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+
+        <div class="header__div--btns hidden">
+            <button id="login">Login</button>
+            <button id="signup">Cadastro</button>
+        </div>
+
+    </header>
+    
+    <main class="main__container">
+
+        <section class="section__img">
+            <img src="./src/assets/img/Image-Home.svg" alt="Image-Home" class="hidden">
+        </section>
+
+        <section class="section__container">
+
+            <select name="sector" id="sector">
+                <option>Selecionar Setor</option>
+            </select>
+
+            <ul class="list__container"></ul>
+        </section>
+
+    </main>
+</body>
+</html>
